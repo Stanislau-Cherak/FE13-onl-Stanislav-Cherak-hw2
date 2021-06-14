@@ -1,0 +1,76 @@
+.axure-conteiner {
+    width: 100%;
+    height: 325px;
+    background: url(../img/background-city.png) center;
+    background-size: cover;
+    position: relative;
+    overflow: hidden;
+}
+
+.axure-conteiner_mask {
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.55);
+}
+
+.axure-top_title {
+    font-family: "Raleway-Regular","Arial", sans-serif;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 36px;
+    line-height: 42px;
+    color: white;
+    text-transform: uppercase;
+    text-align: center;
+    margin-top: 58px;
+    margin-bottom: 34px;
+}
+
+.axure-top_line {
+    width: 64px;
+    height: 2px;
+    background-color: white;
+    margin: 0 auto
+}
+
+.axure-top_text {
+    font-family: "Raleway-Regular","Arial", sans-serif;
+    font-style: normal;
+    font-weight: 300;
+    font-size: 16px;
+    line-height: 19px;
+    color: rgba(255, 255, 255, 0.8);
+    text-align: center;
+    margin-top: 34px;
+    margin-bottom: 57px;
+}
+
+.axure-top_button {
+    position: absolute;
+    left:calc(50% - 67.5px);
+    width: 135px;
+    height: 42px;
+    color: #FFFFFF;
+    font-family: "OpenSans-Regular","Arial", sans-serif;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 15px;
+    line-height: 20px;
+    background: transparent;
+    border: 1px solid #FFFFFF;;
+    cursor: pointer;
+    text-align: center;
+    padding: 11px 26px;
+    margin-bottom: 38px;
+    transition-duration: 1s;
+}
+
+.axure-top_button:hover {
+    background-color: white;
+    color: black;
+}
+
+

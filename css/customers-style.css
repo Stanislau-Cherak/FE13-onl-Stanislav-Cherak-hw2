@@ -1,0 +1,124 @@
+.customers-top_title {
+    font-family: "Raleway-Regular","Arial", sans-serif;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 36px;
+    line-height: 42px;
+    color: #212121;
+    text-transform: uppercase;
+    text-align: center;
+    margin-top: 80px;
+    margin-bottom: 34px;
+}
+
+.customers-top_line {
+    width: 64px;
+    height: 2px;
+    background-color: #E72424;
+    margin: 0 auto
+}
+
+.customers-top_text {
+    font-family: "OpenSans-Regular","Arial", sans-serif;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 19px;
+    color: #86878B;
+    text-align: center;
+    margin-top: 34px;
+    margin-bottom: 67px;
+}
+
+.customers-central {
+    margin: 0 auto;
+     padding: 0px 15px;
+     max-width: 1140px;
+    
+}
+
+.customers-central_wrapper {
+    display: flex;
+    justify-content: center;
+    margin: 0px -55px; 
+}
+
+.customers-speach-column {
+    display: flex;
+    flex-direction: column;
+    flex: 0 1 33.3333%;
+    justify-content: flex-end;
+    padding: 0px 55px;
+    margin-bottom: 120px;
+}
+
+.customers-speach_text {
+    font-family: "OpenSans-Regular","Arial", sans-serif;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 14px;
+    line-height: 19px;
+    border-radius: 7px;
+    background-color: #E2E2E2;
+    text-align: center;
+    color: #86878B;
+    flex: 0 1 auto;
+    position: relative;
+}
+
+.customers-speach_text:after, .customers-speach_text:before {
+    content: '';
+    position: absolute;
+    background-color: #E2E2E2;
+    left: 15%; 
+    bottom: -8.5px;
+    width: 17px; height: 17px;
+    z-index: -1; 
+    transform: rotate(45deg); 
+    -webkit-transform: rotate(45deg);
+   }
+
+.customers-speach_text p {
+    margin: 0px;
+    padding: 9px 22px 6px 23px;
+}
+
+.customers-speach_card {
+    display: flex;
+    justify-content: center;
+    margin-top: 22px;
+}
+
+.customers-foto img {
+    width: 70px;
+    height: 70px;
+    border-radius: 100%;
+    object-fit: cover;
+    margin: 0px 45px 0px 0px;
+}
+
+.customers-view {
+    text-align: right;
+    margin-top: 8px;
+}
+
+.customers-view_name {
+    font-family: "OpenSans-Regular","Arial", sans-serif;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 20px;
+    line-height: 27px;
+    color: #333333;
+    margin-top: 0px;
+    margin-bottom: 12px;
+}
+
+.customers-view_profession {
+    font-family: "OpenSans-Regular","Arial", sans-serif;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 14px;
+    line-height: 19px;
+    color: #86878B;
+    margin: 0px;
+}
