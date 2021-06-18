@@ -1,7 +1,15 @@
-.awesome-container {
+.main-section {
+     padding: 0.1px;
+  
+}
+
+.section-container {
      max-width: 1170px;
      margin: 0 auto;
      padding:0 15px;
+}
+
+.awesome-section {
      background-color: white;
 }
 
@@ -11,9 +19,12 @@
      align-items: center;
 }
 
+.awesome-container {
+     margin-top: 80px; 
+}
+
 .awesome-head {
-     margin-top: 80px;
-     margin-bottom: 68px;
+    margin-bottom: 68px;
 }
 
 .section-title {
@@ -47,17 +58,19 @@
 
 .awesome-columns {
      display: flex;
+     flex-wrap: wrap;
      justify-content: center;
-     margin: 0px -16px; 
+     margin: 0px -16px 66px -16px; 
 }
 
 .awesome-item {
      flex: 0 1 33.3%;
      display: flex;
      flex-direction: column;
+     min-width: 350px;
      align-items:center;
      padding: 0px 16px;
-     margin-bottom: 96px;
+     margin-bottom: 30px;
 }
 
 .awesome-item_title {
