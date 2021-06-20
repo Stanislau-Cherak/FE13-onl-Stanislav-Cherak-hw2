@@ -72,7 +72,7 @@
     object-fit: cover;
 }
 
-.customers-description {
+.customers-info {
     flex: 1 1 50%;
     margin-top: 8px;
     margin-right: 15%;
@@ -93,7 +93,6 @@
     font-family: "OpenSans-Regular","Arial", sans-serif;
     font-style: normal;
     font-weight: normal;
-    font-size: 14px;
     line-height: 19px;
     color: #86878B;
     text-align: end;

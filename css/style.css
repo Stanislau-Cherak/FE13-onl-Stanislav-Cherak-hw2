@@ -42,3 +42,17 @@
     color: #86878B;
     text-align: center;
 }
+
+ul.social-networks-list li {
+    display: inline;    
+}
+
+.social-networks-list a {
+    display: inline-block;
+    font-weight: 900;
+    color: #FFFFFF;
+    background: transparent;
+    cursor: pointer;
+    text-align: center;
+    transition: all 0.25s ease 0.2s;
+}
