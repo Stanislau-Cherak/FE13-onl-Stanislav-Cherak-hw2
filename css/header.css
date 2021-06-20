@@ -25,7 +25,8 @@ ul.header-menu-list li {
     font-weight: 600;
     font-size: 15px;
     line-height: 20px;
-    color: rgba(255, 255, 255, 0.7);    cursor: pointer;
+    color: rgba(255, 255, 255, 0.7);    
+    cursor: pointer;
     text-align: center;
     margin: 0px 20px;
     border-left: 3px solid transparent;
