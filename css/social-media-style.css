@@ -1,0 +1,66 @@
+.social-media-section {
+    background: #F8EFEF;
+    padding: 0.1px;
+}
+
+.social-media-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.social-media-item {
+    margin: 14px 0px 17px 0px;
+    max-width: 350px;
+}
+
+.social-media-title {
+    font-family: "OpenSans-Bold","Arial", sans-serif;
+     font-style: normal;
+     font-weight: 700;
+     font-size: 20px;
+     line-height: 27px;
+     color: #333333;
+     margin-bottom: 14px;
+}
+
+.social-media-description {
+    font-family: "OpenSans-Regular","Arial", sans-serif;
+     font-style: normal;
+     font-weight: normal;
+     line-height: 19px;
+     color: #86878B;     
+}
+
+.social-media-networks {
+    text-align: center;
+}
+
+.social-media-networks-list a {
+    color: #86878B;     
+    font-size: 36px;
+    line-height: 42px;    
+    margin: 0px 20px;
+}
+
+.social-media-networks-list a:hover {
+    color: #D98943;
+    transform: scale(2.0);
+}
+
+@media (max-width: 950px) {
+    .social-media-container {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        align-items: center;
+    }
+    .social-media-item {
+        text-align: center;
+    }
+    .social-media-networks-list a {
+        margin-top: 5px;
+        margin-bottom: 10px; 
+    }
+}
