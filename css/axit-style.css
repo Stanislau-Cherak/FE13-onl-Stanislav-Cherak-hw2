@@ -1,0 +1,80 @@
+.axit-section {
+    padding-top: 108px;
+    padding-bottom: 112px; 
+    width: 100%;
+    background: url(../img/background.png) center;
+    background-size: cover;
+    background-position: center;
+    position: relative;
+    overflow: hidden;
+}
+
+.axit-section::before {
+    content: '';
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.45);
+}
+
+.axit-container {
+    position: relative;
+    z-index: 2;
+}
+
+.axit-columns {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin: 0px -50px; 
+}
+
+.axit-item,  .axit-form{
+    flex: 0 1 50%;
+    display: flex;
+    flex-direction: column;
+    min-width: 400px;
+    align-items:flex-start;
+    padding: 0px 50px;
+}
+
+.axit-head {
+    align-items: flex-start;
+}
+
+.axit-logo_text {
+    font-family: "Raleway-Regular","Arial", sans-serif;
+    font-size: 60px;
+}
+
+.axit-logo_text::after {
+    font-family: "Raleway-Regular","Arial", sans-serif;
+    font-size: 60px;    
+    top: 0;
+    left: 1.25em;
+}
+
+.axit-title {
+    color: #fff;
+    padding-top: 32px;
+    text-align: start;
+}
+
+.axit-title::after {
+    margin:32px 0px;
+    background-color: #fff;
+}
+
+.axit-description {
+    font-family: "Raleway-Regular","Arial", sans-serif;
+    text-align: start;
+    font-size: 16px;
+    font-weight: 300;
+    color: rgba(255, 255, 255, 0.8);
+}
+
+.axit-button {
+    padding-top: 50px;
+}
