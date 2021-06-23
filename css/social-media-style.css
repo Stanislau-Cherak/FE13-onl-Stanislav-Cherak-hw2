@@ -1,6 +1,7 @@
 .social-media-section {
     background: #F8EFEF;
-    padding: 0.1px;
+    padding-top: 14px;
+    padding-bottom: 17px; 
 }
 
 .social-media-container {
@@ -11,7 +12,6 @@
 }
 
 .social-media-item {
-    margin: 14px 0px 17px 0px;
     max-width: 350px;
 }
 
@@ -20,9 +20,8 @@
      font-style: normal;
      font-weight: 700;
      font-size: 20px;
-     line-height: 27px;
      color: #333333;
-     margin-bottom: 14px;
+     padding-bottom: 14px;
 }
 
 .social-media-description {
@@ -50,6 +49,13 @@
 }
 
 @media (max-width: 950px) {
+    .social-media-section {
+        padding-bottom: 0px; 
+    }
+    .social-media-item {
+        padding-bottom: 17px; 
+
+    }
     .social-media-container {
         display: flex;
         flex-direction: column;
@@ -60,7 +66,7 @@
         text-align: center;
     }
     .social-media-networks-list a {
-        margin-top: 5px;
-        margin-bottom: 10px; 
+        padding-top: 5px;
+        padding-bottom: 17px; 
     }
 }

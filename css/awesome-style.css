@@ -1,20 +1,14 @@
 .awesome-section {
+    padding-bottom: 96px; 
      background-color: white;
-}
-
-.awesome-container {
-     margin-top: 80px; 
-}
-
-.awesome-head {
-    margin-bottom: 68px;
 }
 
 .awesome-columns {
      display: flex;
      flex-wrap: wrap;
      justify-content: center;
-     margin: 0px -16px 96px -16px; 
+     padding-top: 68px;
+     margin: 0px -16px; 
 }
 
 .awesome-item {
@@ -72,10 +66,10 @@
 }
 
 @media (max-width: 1140px) {
-     .awesome-columns {
-         margin-bottom: 66px; 
-     }
      .awesome-item {
-          margin-bottom: 30px;
+          padding-bottom: 30px;
      }
+     .awesome-section {
+          padding-bottom: 66px; 
+      }
  }

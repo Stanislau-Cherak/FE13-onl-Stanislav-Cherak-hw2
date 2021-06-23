@@ -2,19 +2,12 @@
     background-color: #F5F5F5;
 }
 
-.pricing-container {
-    margin-top: 80px; 
-}
-
-.pricing-head {
-   margin-bottom: 62px;
-}
-
 .pricing-columns {
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
-    margin: 0px -39px 60px -39px; 
+    padding-top: 62px;
+    margin: 0px -39px; 
 }
 
 .pricing-item {
@@ -33,21 +26,18 @@
     line-height: 19px;
     text-align: center;
     color: #86878B;
-    padding-top: 10px;
     box-sizing: border-box;
     border-bottom: 4px solid #E5E5E5;
     background-color: white;
     width: 300px;
-    height: 50px;
+    line-height: 50px;
 }
 
 .pricing-item_list li:nth-child(1) {
     font-family: "OpenSans-Bold","Arial", sans-serif;
     font-weight: bold;
     font-size: 20px;
-    line-height: 27px;
     color: #FFFFFF;
-    padding-top: 15px;
     border-bottom: 1px solid #E5E5E5;
     background-color: #333333;
 }
@@ -56,18 +46,15 @@
     font-family: "Raleway-Regular","Arial", sans-serif;
     font-weight: 700;
     font-size: 35px;
-    line-height: 41px;
+    line-height: 100px;
     color: #FFFFFF;
-    padding-top: 26px;
     border-bottom: 2px solid #E5E5E5;
     background-color: #333333;
-    height: 100px;
 }
 
 .pricing-item_list li:nth-child(3) {
     font-weight: 600;
     color: rgba(255, 255, 255, 0.5);
-    padding-top: 17px;
     background-color: #333333;
 }
 
@@ -81,11 +68,11 @@
 }
 
 @media (max-width: 1140px) {
-    .pricing-columns {
-        margin-bottom: 0px; 
+    .pricing-section {
+        padding-bottom: 0px; 
     }
     .pricing-item {
-       margin-bottom: 60px;
+       padding-bottom: 60px;
     }
     .pricing-item_list li {
         width: 250px;

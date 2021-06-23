@@ -1,27 +1,21 @@
 .customers-section {
     background-color: white;
-}
-
-.customers-container {
-    margin-top: 80px; 
-}
-
-.customers-head {
-   margin-bottom: 62px;
+    padding-bottom: 120px; 
 }
 
 .customers-columns {
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
-    margin: 0px -50px 120px -50px; 
+    padding-top: 67px;
+    margin: 0px -50px; 
 }
 
 .customers-item {
     flex: 0 1 33.3%;
     display: flex;
     flex-direction: column;
-    align-self: flex-end;
+    justify-content: space-between;
     min-width: 300px;
     padding: 0px 50px;
 }
@@ -41,7 +35,7 @@
    border-top: 12px solid #E2E2E2;
    position: absolute;
    left: 15%;
-   margin-left: -12px;
+   top: 100%;
 }
 
 .customers-speach_text {
@@ -54,15 +48,11 @@
 }
 
 .customers-card {
-    flex: 1 1 auto;
+    padding-top: 22px;
+    flex: 0 1 auto;
     display: flex;
     align-items: center;
-    margin-top: 22px;
-    margin-left: 15%;
-}
-
-.customers-foto {
-    flex: 1 1 50%;
+    justify-content: space-around;
 }
 
 .customers-avatar {
@@ -70,12 +60,6 @@
     height: 70px;
     border-radius: 100%;
     object-fit: cover;
-}
-
-.customers-info {
-    flex: 1 1 50%;
-    margin-top: 8px;
-    margin-right: 15%;
 }
 
 .customers-name {
@@ -99,16 +83,10 @@
 }
 
 @media (max-width: 1140px) {
-    .customers-columns {
-        margin-bottom: 90px;  
+    .customers-section {
+        padding-bottom: 70px; 
     }
     .customers-item {
-        margin-bottom: 30px;          
-    }
-    .customers-card {
-        margin-left: 0%;
-    }
-    .customers-description {
-        margin-right: 0%;
-    }
+        padding-bottom: 50px;
+    }    
 }

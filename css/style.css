@@ -1,5 +1,6 @@
 .main-section {
-    padding: 0.1px; 
+    padding-top: 80px;
+    padding-bottom: 60px; 
 }
 
 .section-container {
@@ -55,4 +56,40 @@ ul.social-networks-list li {
     cursor: pointer;
     text-align: center;
     transition: all 0.25s ease 0.2s;
+}
+
+.logo-text {
+    font-style: normal;
+    font-weight: normal;
+    text-transform: uppercase;
+    color: #FFFFFF;
+    position: relative;    
+}
+
+.logo-text::after {
+    content:'it';
+    font-style: normal;
+    font-weight: normal;
+    text-transform: uppercase;
+    color: #EC7979;
+    position: absolute;
+}
+
+.download-button {
+    color: #FFFFFF;
+    font-family: "OpenSans-Regular","Arial", sans-serif;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 15px;
+    background: transparent;
+    border: 1px solid #FFFFFF;;
+    cursor: pointer;
+    text-align: center;
+    padding: 11px 26px;
+    transition-duration: 0.8s;
+}
+
+.download-button:hover {
+    color: black;
+    background-color: #FFFFFF;
 }
