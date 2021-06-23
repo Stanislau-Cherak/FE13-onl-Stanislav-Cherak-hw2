@@ -1,0 +1,93 @@
+.contact-section {
+    padding-bottom: 55px; 
+    background-color: white;
+}
+
+.contact-form-columns {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    padding-top: 95px;
+    margin: 0px -100px; 
+}
+
+.contact-form-item {
+    flex: 0 1 50%;
+    display: flex;
+    flex-direction: column;
+    min-width: 500px;
+    padding: 0px 100px;
+}
+
+.contact-form_field {
+    flex: 1 1 100%;
+    padding-bottom: 35px;
+}
+
+.contact-form_field input {
+    margin-top: 5px;
+    width: 100%;
+    line-height: 35px;
+    border-bottom: 1px solid #BDBDBD;
+    
+}
+
+.contact-form_field input:focus {
+    border-bottom: 1px solid black;
+    box-shadow: 1px 1px 2px 0 black;
+}
+
+.contact-form_field input:active {
+    border-bottom: 1px solid black;
+    box-shadow: 1px 1px 2px 0 black;
+}
+
+#message {
+    margin-top: 5px;
+    width: 100%;
+    height: 92%;
+	resize: none;
+    overflow: auto;
+    border-bottom: 1px solid #BDBDBD;
+}
+
+.contact-form_field textarea:focus {
+    border-bottom: 1px solid black;
+    box-shadow: 1px 1px 2px 0 black;
+}
+
+.contact-form_field textarea:active {
+    border-bottom: 1px solid black;
+    box-shadow: 1px 1px 2px 0 black;
+}
+
+.contact-form_text {
+    display: block;
+    font-family: "OpenSans-Regular","Arial", sans-serif;
+    font-style: normal;
+    font-weight: normal;
+    color: #BDBDBD;
+}
+
+.contact-button {
+    flex: 0 1 100%;
+    padding-top: 33px;
+    text-align: center;
+}
+
+.contact-button_send {
+    font-family: "OpenSans-Regular","Arial", sans-serif;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 15px;
+    text-align: center;
+    color: #FFFFFF;
+    background: #EC7979;
+    border: 1px solid #FFFFFF;
+    padding: 11px 32px;
+    transition-duration: 0.8s;
+}
+
+.contact-button_send:hover {
+    background-color: black;
+}

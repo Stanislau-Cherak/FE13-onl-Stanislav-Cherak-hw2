@@ -35,8 +35,8 @@
     flex: 0 1 50%;
     display: flex;
     flex-direction: column;
-    min-width: 400px;
-    align-items:flex-start;
+    justify-content: center;
+    min-width: 550px;
     padding: 0px 50px;
 }
 
@@ -45,18 +45,19 @@
 }
 
 .axit-logo_text {
-    font-family: "Raleway-Regular","Arial", sans-serif;
+    font-family: "Roboto","Arial", sans-serif;
     font-size: 60px;
 }
 
 .axit-logo_text::after {
-    font-family: "Raleway-Regular","Arial", sans-serif;
+    font-family: "Roboto","Arial", sans-serif;
     font-size: 60px;    
     top: 0;
     left: 1.25em;
 }
 
 .axit-title {
+    display: block;
     color: #fff;
     padding-top: 32px;
     text-align: start;
@@ -68,6 +69,8 @@
 }
 
 .axit-description {
+    display: block;
+    max-width: 280px;
     font-family: "Raleway-Regular","Arial", sans-serif;
     text-align: start;
     font-size: 16px;
