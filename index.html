@@ -57,14 +57,31 @@
                         <a href="#" title='Donload' class='download-button'>Download</a>
                     </div>
                 </div>
-
-                <div class='form axit-form'>
-                    <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Animi iusto ratione enim. Vitae id qui
-                        eius
-                        et, minus nobis deserunt facilis, enim accusantium obcaecati cupiditate quo, ipsam impedit
-                        excepturi
-                        facere?
-                    </p>
+                <div class='axit-login-form'>
+                        <div class='login-form-item'>
+                            <form name='LoginForm' action="#" method="post" enctype="multipart/form-data">
+                            <div class='login-form-title'>
+                                <p class='login-form-title_text'>
+                                    Try Your <span class='login-form-title-red'>free</span> Trial Today
+                                </p>
+                            </div>
+                            <div class='form-field login-form_field'>
+                                <span class='form-field_text login-form_text'>Name</span>
+                                <input tabindex="1" name="username" type="text" />
+                            </div>
+                            <div class='form-field login-form_field'>
+                                <span class='form-field_text login-form_text'>Email</span>
+                                <input tabindex="2" name="username" type="text" />
+                            </div>
+                            <div class='form-field login-form_field'>
+                                <span class='form-field_text login-form_text'>Password</span>
+                                <input tabindex="3" name="userpass" type="password" />
+                            </div>
+                        </div>
+                        <div class='login-button'>
+                            <button class='login-button_start' tabindex="4" type="submit">Get Started</button>
+                        </div>
+                    </form>
                 </div>
             </div>
         </div>
@@ -300,6 +317,7 @@
             </div>
         </section>
     </main>
+
     <section class='main-section contact-section'>
         <div class='section-container contact-container'>
             <div class='container-head contact-head'>
@@ -310,29 +328,27 @@
                     Lorem ipsum dolor sit amet, consectetur adipiscing elit.
                 </p>
             </div>
-
-            <form action="#" method="post" enctype="multipart/form-data">
+            <form name='ContactForm' action="#" method="post" enctype="multipart/form-data">
                 <div class='contact-form-columns'>
                     <div class='contact-form-item'>
-                        <div class='contact-form_field'>
-                            <span class='contact-form_text'>Name</span>
-                            <input tabindex="1" name="username" type="text" />
+                        <div class='form-field contact-form_field'>
+                            <span class='form-field_text contact-form_text'>Name</span>
+                            <input tabindex="5" name="username" type="text" />
                         </div>
-                        <div class='contact-form_field'>
-                            <span class='contact-form_text'>Email</span>
-                            <input tabindex="2" name="username" type="text" />
+                        <div class='form-field contact-form_field'>
+                            <span class='form-field_text contact-form_text'>Email</span>
+                            <input tabindex="6" name="username" type="text" />
                         </div>
-                        <div class='contact-form_field'>
-                            <span class='contact-form_text'>Password</span>
-                            <input tabindex="3" name="userpass" type="password" />
+                        <div class='form-field contact-form_field'>
+                            <span class='form-field_text contact-form_text'>Password</span>
+                            <input tabindex="7" name="userpass" type="password" />
                         </div>
                     </div>
-
                     <div class='contact-form-item'>
 
-                        <div class='contact-form_field'>
-                            <span class='contact-form_text'>Message</span>
-                            <textarea id='message' tabindex="4" name="text"></textarea>
+                        <div class='form-field contact-form_field'>
+                            <span class='form-field_text contact-form_text'>Message</span>
+                            <textarea id='message' tabindex="8" name="text"></textarea>
                         </div>
 
                     </div>
@@ -341,10 +357,6 @@
                     </div>
                 </div>
             </form>
-
-
-
-
         </div>
         </div>
     </section>

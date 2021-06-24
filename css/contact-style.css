@@ -26,20 +26,7 @@
 
 .contact-form_field input {
     margin-top: 5px;
-    width: 100%;
-    line-height: 35px;
-    border-bottom: 1px solid #BDBDBD;
-    
-}
-
-.contact-form_field input:focus {
-    border-bottom: 1px solid black;
-    box-shadow: 1px 1px 2px 0 black;
-}
-
-.contact-form_field input:active {
-    border-bottom: 1px solid black;
-    box-shadow: 1px 1px 2px 0 black;
+    line-height: 35px;    
 }
 
 #message {
@@ -59,14 +46,6 @@
 .contact-form_field textarea:active {
     border-bottom: 1px solid black;
     box-shadow: 1px 1px 2px 0 black;
-}
-
-.contact-form_text {
-    display: block;
-    font-family: "OpenSans-Regular","Arial", sans-serif;
-    font-style: normal;
-    font-weight: normal;
-    color: #BDBDBD;
 }
 
 .contact-button {

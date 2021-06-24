@@ -93,3 +93,26 @@ ul.social-networks-list li {
     color: black;
     background-color: #FFFFFF;
 }
+
+.form-field_text {
+    display: block;
+    font-family: "OpenSans-Regular","Arial", sans-serif;
+    font-style: normal;
+    font-weight: normal;
+    color: #BDBDBD;
+}
+
+.form-field input {
+    width: 100%;
+    border-bottom: 1px solid #BDBDBD;    
+}
+
+.form-field input:focus {
+    border-bottom: 1px solid black;
+    box-shadow: 1px 1px 2px 0 black;
+}
+
+.form-field input:active {
+    border-bottom: 1px solid black;
+    box-shadow: 1px 1px 2px 0 black;
+}
