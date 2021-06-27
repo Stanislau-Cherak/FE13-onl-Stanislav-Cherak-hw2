@@ -9,10 +9,12 @@
     flex-wrap: wrap;
     justify-content: space-between;
     align-items: center;
+    margin: 0px -15px;
 }
 
 .social-media-item {
-    max-width: 350px;
+    flex: 0 1 30%;
+    margin: 0px 15px;
 }
 
 .social-media-title {
@@ -21,7 +23,7 @@
      font-weight: 700;
      font-size: 20px;
      color: #333333;
-     padding-bottom: 14px;
+     margin-bottom: 14px;
 }
 
 .social-media-description {
@@ -33,14 +35,33 @@
 }
 
 .social-media-networks {
-    text-align: center;
+    flex: 0 1 auto;
+    margin: 0px 15px;
+}
+
+.social-media-networks-list {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.social-media-networks-list li {
+    margin: 0px 20px;
+}
+
+.social-media-networks-list li:nth-last-child(1) {
+    margin-right: 0px;
 }
 
 .social-media-networks-list a {
     color: #86878B;     
     font-size: 36px;
     line-height: 42px;    
-    margin: 0px 20px;
+}
+
+.social-media-networks-list.a:nth-last-child(1) {
+    margin-right: 0px;
 }
 
 .social-media-networks-list a:hover {
@@ -50,11 +71,10 @@
 
 @media (max-width: 950px) {
     .social-media-section {
-        padding-bottom: 0px; 
+        padding-bottom: 0px;       
     }
     .social-media-item {
-        padding-bottom: 17px; 
-
+        margin-bottom: 20px;
     }
     .social-media-container {
         display: flex;
@@ -65,8 +85,10 @@
     .social-media-item {
         text-align: center;
     }
-    .social-media-networks-list a {
-        padding-top: 5px;
-        padding-bottom: 17px; 
+    .social-media-networks-list {
+        justify-content: center;       
+    }
+    .social-media-networks-list li {
+        margin-bottom: 20px;       
     }
 }
