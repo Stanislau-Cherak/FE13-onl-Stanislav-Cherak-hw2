@@ -9,18 +9,30 @@ header {
     flex-wrap: wrap;
     justify-content: space-between;
     align-items: center;
+    margin: 0px -15px;
+}
+
+.header-logo {
+    display: block;
+    margin-left: 15px;
+    font-family: "Raleway-Regular","Arial", sans-serif;
+    font-size: 30px;
 }
 
 .header-menu {
-    text-align: center;
+    flex:0 1 auto;    
 }
 
-ul.header-menu-list li {
-    display: inline;    
+.header-menu-list {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
 }
 
 .header-menu-list a {
-    display: inline-block;
+    display: block;
+    margin:0 15px;
     font-family: "OpenSans-Regular","Arial", sans-serif;
     font-style: normal;
     font-weight: 600;
@@ -29,21 +41,15 @@ ul.header-menu-list li {
     color: rgba(255, 255, 255, 0.7);    
     cursor: pointer;
     text-align: center;
-    margin: 0px 20px;
     border-left: 3px solid transparent;
     border-bottom: 3px solid transparent;
     transition: all 0.25s ease 0.2s;
 }
 
-.header-logo_text {
-    font-family: "Raleway-Regular","Arial", sans-serif;
-    font-size: 30px;
-}
-
-.header-logo_text::after {
+.header-logo::after {
     font-family: "Raleway-Regular","Arial", sans-serif;
     font-size: 30px;    
-    top: 0.1em;
+    top: 0em;
     left: 1.25em;
 }
 
@@ -65,10 +71,13 @@ ul.header-menu-list li {
     }
     .header-logo {
         text-align: center;
-        padding-bottom: 5px;
+        margin: 0px 0px 10px;
+    }
+    .header-menu-list {       
+        justify-content: center;
+        align-items: center;
     }
     .header-menu-list a {
-        padding-top: 5px;
-        padding-bottom: 10px; 
+        margin:0px 15px 10px;
     }
 }

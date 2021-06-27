@@ -58,7 +58,7 @@ ul.social-networks-list li {
     transition: all 0.25s ease 0.2s;
 }
 
-.logo-text {
+.logo {
     font-style: normal;
     font-weight: normal;
     text-transform: uppercase;
@@ -66,16 +66,18 @@ ul.social-networks-list li {
     position: relative;    
 }
 
-.logo-text::after {
+.logo::after {
     content:'it';
     font-style: normal;
     font-weight: normal;
     text-transform: uppercase;
     color: #EC7979;
     position: absolute;
+    margin-right: 15px;
 }
 
 .download-button {
+    display: block;
     color: #FFFFFF;
     font-family: "OpenSans-Regular","Arial", sans-serif;
     font-style: normal;

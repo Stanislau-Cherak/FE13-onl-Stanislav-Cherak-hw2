@@ -6,7 +6,6 @@
     background-size: cover;
     background-position: center;
     position: relative;
-    overflow: hidden;
 }
 
 .axit-section::before {
@@ -27,26 +26,28 @@
 .axit-columns {
     display: flex;
     justify-content: space-between;
+    margin:0 -15px;
 }
 
 .axit-item {
     flex: 0 1 50%;
     display: flex;
     flex-direction: column;
-    justify-content: center;
-    min-width: 550px;
+    align-items: flex-start;
+    margin: 0 15px;    
 }
 
 .axit-head {
     align-items: flex-start;
 }
 
-.axit-logo_text {
+.axit-logo {
     font-family: "Roboto","Arial", sans-serif;
     font-size: 60px;
+    margin-bottom: 32px;
 }
 
-.axit-logo_text::after {
+.axit-logo::after {
     font-family: "Roboto","Arial", sans-serif;
     font-size: 60px;    
     top: 0;
@@ -56,7 +57,6 @@
 .axit-title {
     display: block;
     color: #fff;
-    padding-top: 32px;
     text-align: start;
 }
 
@@ -67,16 +67,13 @@
 
 .axit-description {
     display: block;
+    margin-bottom: 39px;
     max-width: 280px;
     font-family: "Raleway-Regular","Arial", sans-serif;
     text-align: start;
     font-size: 16px;
     font-weight: 300;
     color: rgba(255, 255, 255, 0.8);
-}
-
-.axit-button {
-    padding-top: 50px;
 }
 
 .axit-login-form {
@@ -89,18 +86,17 @@
     max-width: 370px;
     background: #FFFFFF;
     border-radius: 8px;
+    margin: 0 15px;
 }
 
-.login-form-item {
-    flex: 1 1 auto;
-}
-
-.login-form-item .login-form_field:nth-last-child(1) {
-    padding-bottom: 61px;
+.login-form-container {
+    padding: 22px 59px 0px;
+    margin-bottom: 61px;
 }
 
 .login-form-title {
-    padding: 22px 0px 44px 0px;
+    text-align: center;
+    margin-bottom: 44px;
 }
 
 .login-form-title_text {
@@ -118,19 +114,21 @@
 }
 
 .login-form_field {
-    padding-bottom: 20px;
+    width: 100%;
+    margin-bottom: 19px;
+}
+
+.login-form_field:nth-last-child(1) {
+    margin-bottom: 0px;
 }
 
 .login-form_field input {
     line-height: 19px;
 }
 
-.login-button {
-    text-align: center;
-    width: 100%;
-}
-    
 .login-button_start {
+    display: block;
+    width: 100%;
     font-family: "OpenSans-Regular","Arial", sans-serif;
     font-style: normal;
     font-weight: 600;
@@ -141,7 +139,6 @@
     background: #EC7979;
     border-radius: 0px 0px 8px 8px;
     transition-duration: 0.8s;
-    width: 100%;
 }
     
 .login-button_start:hover {
@@ -154,7 +151,7 @@
         flex-direction: column;
     }
     .axit-item {
-        padding-bottom: 60px;
+        margin-bottom: 50px;
     }
     .axit-head {
         align-items:center;
@@ -166,13 +163,11 @@
         margin:32px auto;
         background-color: #fff;
     }
+    .axit-description {
+        max-width: 100%;
+        text-align: center;
+    }
     .axit-button {
         margin: 0px auto;
-    } 
-    .axit-login-form {
-        flex: 1 1 auto;
-    }
-    .login-form-item {
-        padding: 0px 50px 0px 50px;
-    }      
+    }        
 }

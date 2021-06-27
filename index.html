@@ -24,19 +24,19 @@
 <body>
 
     <header>
-        <section class='section-container header-container'>
-            <div class='header-logo'>
-                <a href="index.html" title='AXIT' class='logo-text header-logo_text'>Ax</a>
+        <section class='section-container '>
+            <div class='header-container'>
+                <a href="index.html" title='AXIT' class='logo header-logo'>Ax</a>
+                <nav class='header-menu'>
+                    <ul class='header-menu-list'>
+                        <li><a href="#" title='Feautures'>Feautures</a></li>
+                        <li><a href="#" title='About'>About</a></li>
+                        <li><a href="#" title='Pricing'>Pricing</a></li>
+                        <li><a href="#" title='Reviews'>Reviews</a></li>
+                        <li><a href="#" title='Contact'>Contact</a></li>
+                    </ul>
+                </nav>
             </div>
-            <nav class='header-menu'>
-                <ul class='header-menu-list'>
-                    <li><a href="#" title='Feautures'>Feautures</a></li>
-                    <li><a href="#" title='About'>About</a></li>
-                    <li><a href="#" title='Pricing'>Pricing</a></li>
-                    <li><a href="#" title='Reviews'>Reviews</a></li>
-                    <li><a href="#" title='Contact'>Contact</a></li>
-                </ul>
-            </nav>
         </section>
     </header>
 
@@ -45,44 +45,41 @@
             <div class='axit-columns'>
                 <div class='axit-item'>
                     <div class='container-head axit-head'>
-                        <p class='logo-text axit-logo_text'>Ax</a>
-                        <h2 class='section-title axit-title'>
+                        <p class='logo axit-logo'>Ax</a>
+                        <h1 class='section-title axit-title'>
                             Modern axure template for beatiful prototypes
-                        </h2>
+                        </h1>
                         <p class='section-description axit-description'>
                             Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean
                         </p>
                     </div>
-                    <div class='axit-button'>
-                        <a href="#" title='Donload' class='download-button'>Download</a>
+                    <a href="#" title='Donload' class='download-button axit-button'>Download</a>
+                </div>
+
+                <form class='axit-login-form' name='LoginForm' action="#" method="post" enctype="multipart/form-data">
+                    <div class='login-form-container'>
+                        <div class='login-form-title'>
+                            <p class='login-form-title_text'>
+                                Try Your <span class='login-form-title-red'>free</span> Trial Today
+                            </p>
+                        </div>
+                        <div class='form-field login-form_field'>
+                            <span class='form-field_text login-form_text'>Name</span>
+                            <input tabindex="1" name="username" type="text" />
+                        </div>
+                        <div class='form-field login-form_field'>
+                            <span class='form-field_text login-form_text'>Email</span>
+                            <input tabindex="2" name="username" type="text" />
+                        </div>
+                        <div class='form-field login-form_field'>
+                            <span class='form-field_text login-form_text'>Password</span>
+                            <input tabindex="3" name="userpass" type="password" />
+                        </div>
                     </div>
-                </div>
-                <div class='axit-login-form'>
-                        <div class='login-form-item'>
-                            <form name='LoginForm' action="#" method="post" enctype="multipart/form-data">
-                            <div class='login-form-title'>
-                                <p class='login-form-title_text'>
-                                    Try Your <span class='login-form-title-red'>free</span> Trial Today
-                                </p>
-                            </div>
-                            <div class='form-field login-form_field'>
-                                <span class='form-field_text login-form_text'>Name</span>
-                                <input tabindex="1" name="username" type="text" />
-                            </div>
-                            <div class='form-field login-form_field'>
-                                <span class='form-field_text login-form_text'>Email</span>
-                                <input tabindex="2" name="username" type="text" />
-                            </div>
-                            <div class='form-field login-form_field'>
-                                <span class='form-field_text login-form_text'>Password</span>
-                                <input tabindex="3" name="userpass" type="password" />
-                            </div>
-                        </div>
-                        <div class='login-button'>
-                            <button class='login-button_start' tabindex="4" type="submit">Get Started</button>
-                        </div>
-                    </form>
-                </div>
+
+                    <button class='login-button_start' tabindex="4" type="submit">Get Started</button>
+                </form>
+
             </div>
         </div>
     </section>
@@ -117,9 +114,9 @@
         <section class='main-section awesome-section'>
             <div class='section-container awesome-container'>
                 <div class='container-head awesome-head'>
-                    <h1 class='section-title awesome-title'>
+                    <h2 class='section-title awesome-title'>
                         Why this is awesome
-                    </h1>
+                    </h2>
                     <p class='section-description awesome-description'>
                         Lorem ipsum dolor sit amet, consectetur adipiscing elit.
                     </p>
