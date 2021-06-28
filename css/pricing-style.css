@@ -2,20 +2,23 @@
     background-color: #F5F5F5;
 }
 
+.pricing-head {
+    margin-bottom:62px;
+}
+
 .pricing-columns {
     display: flex;
     flex-wrap: wrap;
-    justify-content: center;
-    padding-top: 62px;
-    margin: 0px -39px; 
+    justify-content: space-between;
+    margin: 0 -15px;
 }
 
 .pricing-item {
-    flex: 0 1 33.3%;
+    flex: 0 1 auto;
     display: flex;
     flex-direction: column;
     align-items:center;
-    padding: 0px 39px;
+    margin: 0 15px;
     transition: all 0.25s ease 0.2s;
 }
 
@@ -27,9 +30,9 @@
     text-align: center;
     color: #86878B;
     box-sizing: border-box;
+    min-width: 300px;
     border-bottom: 4px solid #E5E5E5;
     background-color: white;
-    width: 300px;
     line-height: 50px;
 }
 
@@ -67,15 +70,27 @@
     transform: scale(1.2);
 }
 
-@media (max-width: 1140px) {
+@media (max-width: 990px) {
     .pricing-section {
-        padding-bottom: 0px; 
+        padding-bottom: 0px;
+    }
+    .pricing-columns {
+        justify-content: space-evenly;
     }
     .pricing-item {
-       padding-bottom: 60px;
-    }
-    .pricing-item_list li {
-        width: 250px;
+        margin-bottom: 60px;
     }
 }
 
+@media (max-width: 770px) {
+    .pricing-columns {
+        flex-direction: column;
+        justify-content: center;
+    }    
+}
+
+@media (max-width: 400px) {
+    .pricing-item_list li {
+        min-width: 250px;
+    }  
+}
