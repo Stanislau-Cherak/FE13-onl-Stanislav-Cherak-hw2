@@ -312,9 +312,9 @@
                         ever!
                     </p>
                 </div>
-                
-                    <a href="#" title='Donload' class='download-button axure-button'>Download</a>
-                
+
+                <a href="#" title='Donload' class='download-button axure-button'>Download</a>
+
             </div>
         </section>
     </main>
@@ -329,34 +329,34 @@
                     Lorem ipsum dolor sit amet, consectetur adipiscing elit.
                 </p>
             </div>
-            <form name='ContactForm' action="#" method="post" enctype="multipart/form-data">
-                <div class='contact-form-columns'>
-                    <div class='contact-form-item'>
-                        <div class='form-field contact-form_field'>
-                            <span class='form-field_text contact-form_text'>Name</span>
-                            <input tabindex="5" name="username" type="text" />
-                        </div>
-                        <div class='form-field contact-form_field'>
-                            <span class='form-field_text contact-form_text'>Email</span>
-                            <input tabindex="6" name="username" type="text" />
-                        </div>
-                        <div class='form-field contact-form_field'>
-                            <span class='form-field_text contact-form_text'>Password</span>
-                            <input tabindex="7" name="userpass" type="password" />
-                        </div>
-                    </div>
-                    <div class='contact-form-item'>
+            <form class='contact-form' name='ContactForm' action="#" method="post" enctype="multipart/form-data">
 
-                        <div class='form-field contact-form_field'>
-                            <span class='form-field_text contact-form_text'>Message</span>
-                            <textarea id='message' tabindex="8" name="text"></textarea>
-                        </div>
-
+                <div class='contact-form-item'>
+                    <div class='form-field contact-form_field'>
+                        <label for='contact-username' class='form-field_text contact-form_text'>Name</label>
+                        <input id='contact-username' tabindex="5" name="username" type="text" />
                     </div>
-                    <div class='contact-button'>
-                        <button class='contact-button_send' tabindex="5" type="submit">Send Message</button>
+                    <div class='form-field contact-form_field'>
+                        <label for='contact-email' class='form-field_text contact-form_text'>Email</label>
+                        <input id='contact-email' tabindex="6" name="useremail" type="text" />
+                    </div>
+                    <div class='form-field contact-form_field'>
+                        <label for='contact-password' class='form-field_text contact-form_text'>Password</label>
+                        <input id='contact-password' tabindex="7" name="userpassword" type="password" />
                     </div>
                 </div>
+                <div class='contact-form-item'>
+
+                    <div class='form-field contact-form_field'>
+                        <label for='contact-message' class='form-field_text contact-form_text'>Message</label>
+                        <textarea id='contact-message' tabindex="8" name="usermessage"></textarea>
+                    </div>
+
+                </div>
+                <div class='contact-button'>
+                    <button class='contact-button_send' tabindex="5" type="submit">Send Message</button>
+                </div>
+
             </form>
         </div>
         </div>
