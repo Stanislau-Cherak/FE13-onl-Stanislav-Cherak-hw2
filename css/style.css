@@ -77,7 +77,7 @@ ul.social-networks-list li {
 }
 
 .download-button {
-    display: block;
+    display: inline-block;
     color: #FFFFFF;
     font-family: "OpenSans-Regular","Arial", sans-serif;
     font-style: normal;

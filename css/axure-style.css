@@ -6,7 +6,6 @@
     background-size: cover;
     background-position: center;
     position: relative;
-    overflow: hidden;
 }
 
 .axure-section::before {
@@ -22,6 +21,11 @@
 .axure-container {
     position: relative;
     z-index: 2;
+    text-align: center;
+}
+
+.axure-head {
+    margin-bottom: 68px;
 }
 
 .axure-title {
@@ -39,7 +43,3 @@
     background-color: #fff;
 }
 
-.axure-button {
-    padding-top: 68px;
-    text-align: center;
-}
