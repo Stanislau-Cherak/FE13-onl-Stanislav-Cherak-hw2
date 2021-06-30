@@ -39,7 +39,7 @@
 }
 
 .image-column {
-    flex:0 1 auto;
+    flex:0 0 auto;
 }
 
 .features-tab-button {
