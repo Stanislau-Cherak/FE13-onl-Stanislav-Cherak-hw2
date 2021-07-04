@@ -42,6 +42,8 @@
         }
         .header-button {
             background: $ColorDeepYellowPink;
+            padding: 18px 46px;
+            border-radius: 2px;
             &:hover {
                 background: $ColorBlack;
             }            

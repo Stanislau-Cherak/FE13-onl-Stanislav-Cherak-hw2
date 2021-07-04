@@ -137,6 +137,8 @@ h1, h2, h3, h4, h5, h6 {
 }
 .header .header_main .header-button {
   background: #e84545;
+  padding: 18px 46px;
+  border-radius: 2px;
 }
 .header .header_main .header-button:hover {
   background: #000000;
@@ -213,11 +215,10 @@ a {
   line-height: 21px;
   text-align: center;
   text-transform: uppercase;
-  padding: 18px 46px;
   -webkit-transition-duration: 0.8s;
           transition-duration: 0.8s;
 }
 
-.content {
+.content-cards {
   padding: 120px 0px;
 }
