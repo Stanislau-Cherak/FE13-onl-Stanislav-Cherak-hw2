@@ -35,6 +35,50 @@ a {
     transition-duration: 0.8s;
 }
 
+ul {
+    &.social_links {
+        display: flex;
+        align-items: center;
+        li {
+            display: block;
+            &:hover {
+                .facebook_link {
+                    color: $ColorFacebook;
+                    background: $ColorWhite;
+                    border: 1px solid $ColorFacebook;
+                }
+                .twitter_link {
+                    color: $ColorTwitter;
+                    background: $ColorWhite;
+                    border: 1px solid $ColorTwitter;
+                }
+                .instagram_link {
+                    color: $ColorInstagram;
+                    background: $ColorWhite;
+                    border: 1px solid $ColorInstagram;
+                }
+                
+            }
+        }
+        a {
+            display: inline-block;
+            width: 40px;
+            height: 40px;
+            color: $ColorGridePerlev;
+            background: transparent;
+            cursor: pointer;
+            text-align: center;
+            border: 1px solid $ColorLavender;
+            transition: all 0.25s ease 0.2s;
+            .fab {
+                font-size: 18px;
+                font-weight: 900;
+                margin-top: 10px;
+            }            
+        }
+    }
+}
+
 .card-section {
     padding: 120px 0px 50px 0px;
 }
@@ -142,5 +186,56 @@ a {
     }
 }
 
+.developers-section {
+    padding-bottom: 50px;
+}
 
-
+.developers-columns {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin: 0px -15px;
+    .developer {
+        display: flex;
+        flex-direction: column;
+        flex: 0 1 22%;
+        min-width: 220px;
+        margin: 0px 15px 50px;
+        text-align: left;
+        .developer_avatar {
+            position: relative;
+            overflow: hidden;
+            padding: 0px 0px 100% 0px;
+            margin-bottom: 30px;
+            img {
+                width: 100%;
+                height: 100%;
+                object-fit: cover;
+                position: absolute;
+                top: 0;
+                left: 0;
+            }
+        }
+        .developer_name {
+            color: $ColorAnthraciteGray;
+            font-family: 'Raleway', Arial, sans-serif;
+            font-size: 22px;
+            margin-bottom: 16px;
+        }
+        .developer_info {
+            color: $ColorDeepYellowPink;
+            font-family: 'Raleway', Arial, sans-serif;
+            font-size: 13px;
+            text-transform: uppercase;
+            margin-bottom: 30px;
+        }
+        .developer_description {
+            display: block;
+            flex: 1 1 auto;
+            color: $ColorPearlBlackberry;
+            font-family: 'Raleway', Arial, sans-serif;
+            line-height: 21px;
+            margin-bottom: 30px;
+        }        
+    }
+}

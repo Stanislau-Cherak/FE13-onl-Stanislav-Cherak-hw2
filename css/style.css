@@ -219,6 +219,50 @@ a {
           transition-duration: 0.8s;
 }
 
+ul.social_links {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+ul.social_links li {
+  display: block;
+}
+ul.social_links li:hover .facebook_link {
+  color: #4267B2;
+  background: #ffffff;
+  border: 1px solid #4267B2;
+}
+ul.social_links li:hover .twitter_link {
+  color: #1da1f2;
+  background: #ffffff;
+  border: 1px solid #1da1f2;
+}
+ul.social_links li:hover .instagram_link {
+  color: #bc2a8d;
+  background: #ffffff;
+  border: 1px solid #bc2a8d;
+}
+ul.social_links a {
+  display: inline-block;
+  width: 40px;
+  height: 40px;
+  color: #c6cacc;
+  background: transparent;
+  cursor: pointer;
+  text-align: center;
+  border: 1px solid #e8ecee;
+  -webkit-transition: all 0.25s ease 0.2s;
+  transition: all 0.25s ease 0.2s;
+}
+ul.social_links a .fab {
+  font-size: 18px;
+  font-weight: 900;
+  margin-top: 10px;
+}
+
 .card-section {
   padding: 120px 0px 50px 0px;
 }
@@ -350,4 +394,73 @@ a {
   position: absolute;
   top: 0;
   left: 0;
+}
+
+.developers-section {
+  padding-bottom: 50px;
+}
+
+.developers-columns {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  margin: 0px -15px;
+}
+.developers-columns .developer {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-flex: 0;
+      -ms-flex: 0 1 22%;
+          flex: 0 1 22%;
+  min-width: 220px;
+  margin: 0px 15px 50px;
+  text-align: left;
+}
+.developers-columns .developer .developer_avatar {
+  position: relative;
+  overflow: hidden;
+  padding: 0px 0px 100% 0px;
+  margin-bottom: 30px;
+}
+.developers-columns .developer .developer_avatar img {
+  width: 100%;
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+.developers-columns .developer .developer_name {
+  color: #2d3033;
+  font-family: "Raleway", Arial, sans-serif;
+  font-size: 22px;
+  margin-bottom: 16px;
+}
+.developers-columns .developer .developer_info {
+  color: #e84545;
+  font-family: "Raleway", Arial, sans-serif;
+  font-size: 13px;
+  text-transform: uppercase;
+  margin-bottom: 30px;
+}
+.developers-columns .developer .developer_description {
+  display: block;
+  -webkit-box-flex: 1;
+      -ms-flex: 1 1 auto;
+          flex: 1 1 auto;
+  color: #6c7279;
+  font-family: "Raleway", Arial, sans-serif;
+  line-height: 21px;
+  margin-bottom: 30px;
 }
