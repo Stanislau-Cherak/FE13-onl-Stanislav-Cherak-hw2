@@ -6,7 +6,7 @@ $(document).ready(function(){
         speed: 2000,
         easing:'ease',
         fade: true,
-        autoplay: false,
+        autoplay: true,
         autoplaySpeed: 4000,
         waitForAnimate: false,
         appendDots:$('.slider_description'),
