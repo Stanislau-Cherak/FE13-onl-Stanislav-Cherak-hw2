@@ -3,6 +3,7 @@ $(document).ready(function(){
         arrows:false,
         dots: true,
         fade: true,
+        adaptiveHeight: true,
         speed: 2000,
         easing:'ease',
         fade: true,

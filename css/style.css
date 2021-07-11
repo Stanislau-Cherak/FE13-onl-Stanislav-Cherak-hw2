@@ -822,6 +822,7 @@ ul.social_links li a .fab {
   position: relative;
   overflow: hidden;
   min-height: 350px;
+  padding: 20% 0 0 0;
 }
 @media (max-width: 400px) {
   .slider_item .slider_image {
