@@ -13,3 +13,10 @@ $(document).ready(function(){
         appendDots:$('.slider_description'),
     });
 });
+
+$(document).ready(function() {
+	$('.header_burger').click(function(event) {
+		$('.header_burger,.header-menu').toggleClass('active');
+		$('body').toggleClass('lock');
+	});
+});
