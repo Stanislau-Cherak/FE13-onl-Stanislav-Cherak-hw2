@@ -79,33 +79,42 @@ ul {
 
 .card-section {
     padding: 120px 0px 50px 0px;
+    .container {
+        max-width: 1100px;
+    }
 }
 
 .card-columns {
     display: flex;
     flex-wrap: wrap;
-    justify-content: center;
-    margin: 0px -47px;
+    justify-content: space-between;
+    margin: 0px -15px;
+    @media (max-width: 990px) {
+        justify-content: space-evenly;
+    }
     .card {
-        flex:0 1 33.33%;        
+        flex:0 1 25%;        
         text-align: center;
-        min-width: 400px;
-        padding: 0px 47px;
-        margin-bottom:74px;
-        @media (max-width: 1135px) {
-            flex-basis: 45%;            
+        min-width: 300px;
+        margin:0px 15px 74px;
+        @media (max-width: 990px) {
+            flex-basis: 35%;            
         }
-        @media (max-width: 735px) {
-            flex-basis: 85%;
-            min-width: 300px;           
+        @media (max-width: 660px) {
+            flex-basis: 60%;            
         }
-
+        @media (max-width: 500px) {
+            min-width: 250px;
+        }
         .card-img_top {
+            overflow: hidden;
             max-width: 80px;
             max-height: 80px;
-            object-fit: cover;
-            margin-bottom:35px;
-        }
+            margin: 0 auto 35px;
+            img {
+               object-fit: cover;
+            }
+        }        
         .card_title {
             color: $ColorAnthraciteGray;
             font-family: 'Raleway', Arial, sans-serif;
@@ -122,10 +131,6 @@ ul {
     }
 }
 
-.portfolio-section {
-    padding-bottom: 100px;
-}
-
 .portfolio-container {
     display: flex;
     flex-wrap: wrap;
@@ -134,7 +139,6 @@ ul {
     .portfolio-item_wrapper {
         flex: 0 1 25%;
         border: 0.5px solid $ColorWhite;
-        min-width: 400px;
         @media (max-width: 1600px) {
             flex: 0 1 33.33%;
             &:nth-last-child(-n+2) {
@@ -146,14 +150,7 @@ ul {
             &:nth-last-child(-n+4) {
                 display: none;
             }
-        }
-        @media (max-width: 800px) {
-            flex: 0 1 100%;
-            min-width: 300px;
-            &:nth-last-child(-n+6) {
-                display: none;
-            }
-        }
+        }       
         .portfolio_item {
             height: 100%;
             display: block;
@@ -165,7 +162,6 @@ ul {
                 top: 0;
                 left: 0;
                 display: flex;
-                font-size: 14px;
                 flex-direction: column;
                 transition: all 0.3s ease 0s;
                 justify-content: center;
@@ -174,13 +170,16 @@ ul {
                 z-index: 2;
                 opacity: 0;
                 visibility: hidden;
+                @media (max-width: 600px) {
+                    font-size: 12px;                        
+                } 
                 .item_title {
                     color: $ColorWhite;
                     font-family: 'Raleway', Arial, sans-serif;
                     font-weight: 700;
                     text-align: center;
                     text-transform: uppercase;
-                    margin-bottom: 13px;
+                    margin-bottom: 13px;                    
                 }
                 .item_description {
                     color: $ColorWhite;
@@ -192,6 +191,9 @@ ul {
                 .item_info {
                     opacity: 1;
                     visibility: visible;
+                }
+                img {
+                    scale: (1.5);
                 }
             }
             .item_image {
@@ -205,6 +207,7 @@ ul {
                     position: absolute;
                     top: 0;
                     left: 0;
+                    transition: all 0.3s ease 0s;
                 }
             }
          }
@@ -212,7 +215,7 @@ ul {
 }
 
 .developers-section {
-    padding-bottom: 50px;
+    padding: 100px 0px;
 }
 
 .developers-columns {
@@ -228,7 +231,7 @@ ul {
         flex-direction: column;
         flex: 0 1 22%;
         min-width: 220px;
-        margin: 0px 15px 50px;
+        margin: 0px 15px;
         text-align: left;
         @media (max-width: 1000px) {
             flex: 0 1 30%;
@@ -243,10 +246,11 @@ ul {
             }            
         }
         @media (max-width: 600px) {
-            flex: 0 1 85%;                     
+            flex: 0 1 80%;
+            &:nth-of-type(1) {
+                margin-bottom: 50px;
+            }                     
         }
-
-
         .developer_avatar {
             position: relative;
             overflow: hidden;
